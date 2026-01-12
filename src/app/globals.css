@@ -1,0 +1,191 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  /* Define custom colors variables */
+  --color-brand-blue: #245FFF;
+  --color-brand-blue-hover: #1E4ED8;
+  --color-brand-dark-blue: #081225;
+  --color-brand-blue-light: #6D7FCB;
+  --background-image-separtor-line: linear-gradient(102.44deg, #C79876 -10.63%, #FFE1B5 108.84%);
+  --text-extra-small: 9px;
+  --text-text-22: 22px;
+  --text-text-26: 26px;
+  --text-text-28: 28px;
+
+  /* Header Screen gradients CSS Vars */
+  --background-image-header-gradient:
+    linear-gradient(89.99deg, rgba(133, 157, 189, 0.1725) 0.01%, rgba(133, 157, 189, 0.0425) 11.69%, rgba(133, 157, 189, 0.0475) 32.24%, rgba(133, 157, 189, 0.065) 75.04%, rgba(133, 157, 189, 0.25) 99.99%);
+  --background-color-header: rgba(255, 255, 255, 0.7);
+
+  /* Banner Screen gradients CSS Vars */
+  /* --background-image-banner-gradient: linear-gradient(74.18deg,#99A6D5 3.97%,#5B75FE 101.42%); */
+  --background-image-banner-card-gradient: linear-gradient(89.8deg, rgba(227, 233, 247, 0.51) 0.15%, rgba(255, 255, 255, 0.12) 100.01%);
+  --backdrop-blur-heavy: 120.57135772705078px;
+  --background-image-banner-radial-gradient: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.25) 50%, transparent 70%);
+
+  /* Home Page gradients CSS vars */
+  --background-image-home-gradient: linear-gradient(74.18deg, #99A6D5 3.97%, #5B75FE 101.42%);
+  --background-image-trusted-by:
+    linear-gradient(180deg, #020816 0%, #050d1f 35%, #0a1430 100%),
+    linear-gradient(90deg, #030a1b 0%, #0a1430 50%, #030a1b 100%);
+  --background-image-about-info-gradient: linear-gradient(270deg, #231E34 0%, #0E0E22 100%);
+  --background-image-about-card-gradient: linear-gradient(74.18deg, #A9C5F5 3.97%, #FFFFFF 101.42%);
+  --shadow-glass-inset:
+    inset 1px 1px 4px 0px #ffffff99,
+    inset -1px -1px 4px 0px #ffffff99,
+    inset 0 0 1px 0px #ffffff40,
+    inset 1px 1px 1px 0px #ffffff40;
+  --shadow-blue-glow: -6px -1px 36.1px 0px #344BFDBF;
+  --background-image-home-product-overview: linear-gradient(0deg, rgba(8, 18, 37, 0) 0%, #081225 100%);
+  /* --background-image-home-lets-build: linear-gradient(74.18deg,#99A6D5 3.97%,#5B75FE 101.42%); */
+  --background-image-home-faqs: linear-gradient(180deg, rgba(8, 18, 37, 0) 0%, #081225 100%);
+
+  /* Footer Screen gradient CSS Vars */
+  /* --background-image-footer-gradient: linear-gradient(90deg,#071526 0%,#0b2b48 25%,#14294a 50%,#1a2b50 75%,#172a49 100%); */
+  --background-image-footer-bottom-bar-gradient: linear-gradient(90deg, rgba(226, 228, 235, 0.95) 0%, rgba(216, 223, 236, 0.9) 50%, rgba(218, 222, 235, 0.95) 100%);
+
+  /* Recuriter Page */
+  /* Hiring Challenge Section */
+  --background-image-poweredBy-title: linear-gradient(90.12deg, #081225 -0.28%, rgba(36, 95, 255, 0.88) 55.62%, #081225 99.95%);
+  --background-image-rounded-inner-circle: radial-gradient(circle, rgba(36, 95, 255, 0.9) 0%, rgba(36, 95, 255, 0.7) 25%, rgba(36, 95, 255, 0.45) 45%, rgba(36, 95, 255, 0.18) 60%, rgba(36, 95, 255, 0) 72%);
+  --background-image-rounded-outer-circle: linear-gradient(180deg, rgba(36, 95, 255, 0.8) 0%, rgba(36, 95, 255, 0.35) 60%, rgba(36, 95, 255, 0) 100%);
+  /* Hire Smarter Section */
+  --background-image-hire-smarter-card: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 90%, #000000 100%);
+  /* Plan Section */
+  --background-image-recuriter-most-popular: linear-gradient(180deg, #245FFF 0%, #081225 100%);
+
+  /* Campus Page */
+  /* banner section CSS Vars */
+  --background-image-campus-banner: linear-gradient(180deg, rgba(36, 95, 255, 0.30) 11.77%, #081225 100%);
+
+  /* talent Section */
+  --background-image-talent-section: linear-gradient(180deg, #5E77FC -15.35%, #081225 100%);
+  /* howIt-works Section */
+  --background-image-howIt-works-section: radial-gradient(ellipse, #245FFF66, transparent 80%);
+
+  /* About Page */
+
+}
+
+:root {
+  --radius: 0.625rem;
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

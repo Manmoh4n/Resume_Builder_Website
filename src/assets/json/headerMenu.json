@@ -1,0 +1,24 @@
+{
+    "menu": [
+        {
+            "label": "Home",
+            "href": "/"
+        },
+        {
+            "label": "For Recruiters",
+            "href": "/recruiters"
+        },
+        {
+            "label": "For Campus",
+            "href": "/campus"
+        },
+        {
+            "label": "Resume Builder",
+            "href": "/resume-Builder"
+        },
+        {
+            "label": "About us",
+            "href": "/about"
+        }
+    ]
+}

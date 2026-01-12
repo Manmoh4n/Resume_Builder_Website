@@ -1,0 +1,18 @@
+Next Js + React Js
+Tailwind CSS Library - For CSS
+Shadcn - For UI Library
+Axios - For API Calls
+Redux Saga - Global State Management
+
+Step 1: Clone the repo
+https://github.com/jobvrittaportal/ECampus-Front/tree/master
+
+Step 2: Checkout in master branch
+
+Step 3: Make your own branch
+
+Step 4: Install the node modules
+npm install
+
+Step 5: To run the project
+npm run dev

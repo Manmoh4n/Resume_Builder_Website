@@ -1,0 +1,15 @@
+{
+ "col1" : [
+  { "label": "Home", "href": "/" },
+  { "label": "For Recruiters", "href": "/recruiters" },
+  { "label": "For Campus", "href": "/campus" }
+],
+ "col2" : [
+  { "label": "Contact Us", "href": "/contact" },
+  { "label": "Blogs", "href": "/blogs" }
+],
+ "col3" : [
+  { "label": "Terms and Conditions", "href": "/terms" },
+  { "label": "Privacy Policy", "href": "/privacy" }
+]
+}

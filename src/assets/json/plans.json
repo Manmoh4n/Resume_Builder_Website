@@ -1,0 +1,52 @@
+{ 
+  "plans": [
+    {
+      "id": "starter",
+      "title": "STARTER",
+      "price": "49,999",
+      "subtitle": "For early-stage startups or small teams",
+      "features": [
+        "20 candidate profile downloads",
+        "Upto 2 Active Requirements",
+        "View Basic AI Match Scores",
+        "1 recruiter seat",
+        "Email support"
+      ],
+      "popular": false
+      
+    },
+    {
+      "id": "growth",
+      "title": "GROWTH",
+      "price": "149,999",
+      "subtitle": "Scaling tech teams, regular hiring",
+      "features": [
+        "150 candidate profile downloads",
+        "Upto 10 Active Requirements",
+        "AI Smart Filtering & Matchmaking",
+        "Host 1 Hiring Contest/Month",
+        "Access to Candidate Contact Details",
+        "3 recruiter seats",
+        "Priority support"
+      ],
+      "popular": true
+    },
+    {
+      "id": "enterprise",
+      "title": "ENTERPRISE PLAN",
+      "price": "1,499,999",
+      "subtitle": "For large teams & enterprises",
+      "features": [
+        "Unlimited profile downloads/month",
+        "Unlimited Requirements",
+        "Host Unlimited Hiring Contests",
+        "Access Candidate Activity & Scores",
+        "White-labeled Experience",
+        "Unlimited recruiter seats",
+        "Dedicated Account Manager"
+      ],
+      "popular": false
+      
+    }
+  ]
+}
